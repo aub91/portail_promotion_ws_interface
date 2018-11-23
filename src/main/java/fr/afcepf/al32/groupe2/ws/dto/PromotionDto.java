@@ -1,8 +1,9 @@
 package fr.afcepf.al32.groupe2.ws.dto;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Data 
+@Data @NoArgsConstructor
 public class PromotionDto {
 	private Long id;
 
