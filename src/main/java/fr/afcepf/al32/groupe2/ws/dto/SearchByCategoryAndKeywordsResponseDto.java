@@ -9,10 +9,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SearchByShopResponseDto {
-
+public class SearchByCategoryAndKeywordsResponseDto {
 	private List<PromotionDto> promotionsDto;
-	
-	private List<ShopDto> shopDtos;
+
+	private CategoryProductDto categoryProductDto;
+
+	private List<String> keyWords;
+
 
 }
