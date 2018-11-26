@@ -11,4 +11,9 @@ public class CategoryAndKeywordsDto {
 	private CategoryProductDto categoryProductDto;
 
 	private List<String> keyWords;
+
+	public CategoryAndKeywordsDto(CategoryProductDto categoryProductDto, List<String> keyWords){
+		this.categoryProductDto = categoryProductDto;
+		this.keyWords = keyWords;
+	}
 }
