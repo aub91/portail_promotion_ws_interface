@@ -7,6 +7,15 @@
 	<groupId>fr.afcepf.al32.groupe2</groupId>
 	<artifactId>portail_promotion_ws_interface</artifactId>
 	<version>1.0-SNAPSHOT</version>
+
+	<properties>
+		<!-- propriétées qui seront héritées par tous les sous modules de l'application -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- penser aussi à régler UTF8 dans eclipe (windows/preferences/general/workspace) -->
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
