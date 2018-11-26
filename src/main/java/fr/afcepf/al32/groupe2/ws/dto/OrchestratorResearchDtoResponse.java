@@ -13,12 +13,15 @@ public class OrchestratorResearchDtoResponse {
 
     private List<PromotionDto> promotions;
 
-    public OrchestratorResearchDtoResponse(Long categoryId, List<String> keyWords, String source, Integer perimetre, List<PromotionDto> promotions) {
+    private Boolean addressValid;
+
+    public OrchestratorResearchDtoResponse(Long categoryId, List<String> keyWords, String source, Integer perimetre, List<PromotionDto> promotions, Boolean addressValid) {
         this.categoryId = categoryId;
         this.keyWords = keyWords;
         this.source = source;
         this.perimetre = perimetre;
         this.promotions = promotions;
+        this.addressValid = addressValid;
     }
 
     public OrchestratorResearchDtoResponse(){}
@@ -61,5 +64,13 @@ public class OrchestratorResearchDtoResponse {
 
     public void setPromotions(List<PromotionDto> promotions) {
         this.promotions = promotions;
+    }
+
+    public Boolean getAddressValid() {
+        return addressValid;
+    }
+
+    public void setAddressValid(Boolean addressValid) {
+        this.addressValid = addressValid;
     }
 }
