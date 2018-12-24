@@ -1,6 +1,7 @@
 package fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.*;
@@ -30,6 +31,7 @@ public class Promotion {
 
     @Column(name="date_of_creation")
     @Temporal(TemporalType.TIMESTAMP)
+    @Indexed
     private Date dateCreation;
 
     @Column(name="date_of_remove")
