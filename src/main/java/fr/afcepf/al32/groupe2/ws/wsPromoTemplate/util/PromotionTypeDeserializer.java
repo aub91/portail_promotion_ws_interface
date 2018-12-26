@@ -28,13 +28,13 @@ public class PromotionTypeDeserializer extends StdDeserializer<PromotionType> {
         JsonNode node = p.getCodec().readTree(p);
         String className = node.get("_class").textValue();
         switch (className){
-            case "fr.afcepf.al32.wspromotemplate.entity.PercentType":
+            case "fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.PercentType":
                 return new PercentType(node.get("promotionTypeId").longValue(), node.get("percentValue").doubleValue(), node.get("minPurchaseAmount").doubleValue());
 
-            case "fr.afcepf.al32.wspromotemplate.entity.Pack":
+            case "fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.Pack":
                 return new Pack(node.get("promotionTypeId").longValue(), node.get("numberPurchased").intValue(), node.get("numberOffered").intValue());
 
-            case "fr.afcepf.al32.wspromotemplate.entity.Discount":
+            case "fr.afcepf.al32.groupe2.ws.wsPromoTemplate.entity.Discount":
                 return new Discount(node.get("promotionTypeId").longValue(), node.get("discountValue").doubleValue(), node.get("minPurchaseAmount").doubleValue());
 
             default:

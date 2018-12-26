@@ -15,6 +15,7 @@ public class PercentType extends PromotionType {
 		super(promotionTypeId);
 		this.percentValue = percentValue;
 		this.minPurchaseAmount = minPurchaseAmount;
+		this._class = this.getClass().getName();
 	}
 
 	public Double getPercentValue() {
@@ -33,4 +34,8 @@ public class PercentType extends PromotionType {
 		this.minPurchaseAmount = minPurchaseAmount;
 	}
 
+	@Override
+	public String getName() {
+		return "Pourcentage";
+	}
 }

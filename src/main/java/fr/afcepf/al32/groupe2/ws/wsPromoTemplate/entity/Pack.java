@@ -15,6 +15,7 @@ public class Pack extends PromotionType {
 		super(promotionTypeId);
 		this.numberPurchased = numberPurchased;
 		this.numberOffered = numberOffered;
+		this._class = this.getClass().getName();
 	}
 
 	public Integer getNumberPurchased() {
@@ -29,5 +30,9 @@ public class Pack extends PromotionType {
 	public void setNumberOffered(Integer numberOffered) {
 		this.numberOffered = numberOffered;
 	}
-	
+
+	@Override
+	public String getName() {
+		return "Pack";
+	}
 }

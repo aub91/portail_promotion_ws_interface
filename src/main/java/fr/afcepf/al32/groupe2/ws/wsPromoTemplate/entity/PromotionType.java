@@ -9,6 +9,8 @@ public class PromotionType {
     @Column(name = "promotion_type_id")
     private Long promotionTypeId;
 
+    protected String _class;
+
     public PromotionType(Long promotionTypeId) {
         this.promotionTypeId = promotionTypeId;
     }
@@ -19,5 +21,17 @@ public class PromotionType {
 
     public void setPromotionTypeId(Long promotionTypeId) {
         this.promotionTypeId = promotionTypeId;
+    }
+
+    public String get_class() {
+        return _class;
+    }
+
+    public void set_class(String _class) {
+        this._class = _class;
+    }
+
+    public String getName(){
+        return null;
     }
 }

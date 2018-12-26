@@ -19,6 +19,7 @@ public class Discount extends PromotionType {
 		super(promotionTypeId);
 		this.discountValue = discountValue;
 		this.minPurchaseAmount = minPurchaseAmount;
+		this._class = this.getClass().getName();
 	}
 
 	public Double getDiscountValue() {
@@ -37,4 +38,8 @@ public class Discount extends PromotionType {
 		this.minPurchaseAmount = minPurchaseAmount;
 	}
 
+	@Override
+	public String getName() {
+		return "Remise";
+	}
 }
